@@ -10,7 +10,7 @@
     "navigationBarBackgroundColor": "black",
     "navigationBarTitleText": "CNODEJS",
     "navigationBarTextStyle":"white",
-    "enablePullDownRefresh":false
+    "enablePullDownRefresh":true
   },
  "tabBar":{
     "color":"#272636",

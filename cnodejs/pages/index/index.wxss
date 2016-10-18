@@ -2,6 +2,11 @@
 .header{
   width: 100%;
   font-family: 微软雅黑;
+  height: 130rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
 }
 .header .logo image{
   width: 100%;
@@ -33,6 +38,7 @@
 }
 /*列表*/
 #scroll_v{
+  margin-top: 130rpx;
   height: 1050rpx;
   font-family: 微软雅黑;
 }

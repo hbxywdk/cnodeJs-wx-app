@@ -13,7 +13,7 @@
 </view>
 
 
-<scroll-view id="scroll_v" scroll-y="true" bindscrolltoupper="refresh" bindscrolltolower="more">
+<scroll-view id="scroll_v" scroll-y="true" bindscrolltolower="more">
 
   <block wx:for="{{list}}">
 

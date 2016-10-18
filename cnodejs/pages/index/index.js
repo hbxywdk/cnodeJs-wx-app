@@ -74,9 +74,12 @@ Page({
     this.getData(true);
   },
   //刷新
-  refresh:function(){
+  onPullDownRefresh:function(){
     this.getData();
   },
+/*  refresh:function(){
+    this.getData();
+  },*/
   //文章类型切换
   changeType:function(e){
     var _type_=e.currentTarget.id;
