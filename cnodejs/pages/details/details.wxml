@@ -1,0 +1,28 @@
+<!--details.wxml-->
+<block wx:if="{{loading}}">
+  <view class="mask"></view>
+  <view class="load">加载中</view>
+</block>
+<view class="box">
+  <view class="tit_box">{{title}}</view>
+  <view class="con_box">
+    
+    {{content}}
+
+  </view>
+  <block wx:if="{{ huifu.length===0?false:true }}" >
+    <view class="huifu">
+      <view>回复</view>
+
+      <block wx:for="{{ huifu }}">
+        <view class="huifu_tit">
+          <image class="fl" src="{{item.author.avatar_url}}"></image>
+          <text class="fl"> {{item.author.loginname}} {{index+1}} 楼 </text><text class="fr">{{item.create_at_}}</text>
+        </view>
+        <view class="huifu_con">{{item.content}}</view>
+      </block>
+
+    </view>
+  </block>
+</view>
+

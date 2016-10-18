@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="header">
+  <view class="logo">
+    <image src="https://o4j806krb.qnssl.com/public/images/cnodejs_light.svg"></image>
+  </view>
+  <view class="bar">
+    <view id="all" bindtap="changeType">全部</view>
+    <view id="good" bindtap="changeType">精华</view>
+    <view id="share" bindtap="changeType">分享</view>
+    <view id="ask" bindtap="changeType">问答</view>
+    <view id="job" bindtap="changeType">招聘</view>
+  </view>
+</view>
+
+
+<scroll-view id="scroll_v" scroll-y="true" bindscrolltoupper="refresh" bindscrolltolower="more">
+
+  <block wx:for="{{list}}">
+
+    <view class="one" bindtap="seeInner" id="{{item.id}}">
+
+      <view class="img">
+        <image src="{{item.author.avatar_url}}"></image>
+      </view>
+
+      <view class="type">
+        <view class="top_good" wx:if="{{item.top}}">置顶</view>
+        <view class="top_good" wx:elif="{{item.good}}">精华</view>
+        <view wx:elif="{{item.tab==='ask'}}">问答</view>
+        <view wx:elif="{{item.tab==='share'}}">分享</view>
+        <view wx:elif="{{item.tab==='job'}}">招聘</view>
+        <view wx:else>无分类</view>
+      </view>
+
+      <view class="text">
+        <view class="tit">{{item.title}}</view>
+        <view class="huifu">回复：{{item.reply_count}} 阅读：{{item.visit_count}}</view>
+      </view>
+
+      <view class="time">
+        <view class="timer">{{item.create_at_}}</view>
+      </view>
+
+    </view>
+
+  </block>
+
+</scroll-view>
+

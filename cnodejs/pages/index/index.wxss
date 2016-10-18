@@ -1,0 +1,111 @@
+/**index.wxss**/
+.header{
+  width: 100%;
+  font-family: 微软雅黑;
+}
+.header .logo image{
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #fff;
+  background: #444;
+  padding: 10rpx 0 12rpx 0;
+}
+.header image{
+  height: 50rpx;
+  display: block;
+  margin: 0 auto;
+}
+.bar{
+  width: 100%;
+  background: #eee;
+  display: flex;
+  color:#444; 
+
+}
+.bar view{
+  flex:1;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: .8rem;
+}
+/*列表*/
+#scroll_v{
+  height: 1050rpx;
+  font-family: 微软雅黑;
+}
+.one{
+  height: 80rpx;
+  border-bottom: 1px solid #fff;
+  margin: 10rpx 0;
+  padding: 0 1% 0 1%;
+}
+.one view{
+  height: 100%;
+  color: #666;
+}
+/* 图片 */
+.one .img{
+  float: left;
+  width: 12%;
+  position: relative;
+}
+.one .img image{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -25rpx;
+  margin-left: -25rpx;
+}
+/* 类型 */
+.one .type{
+  width: 12%;
+  float: left;
+}
+.one .type view{
+  width: 90%;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 17rpx;
+  margin: 20rpx auto 20rpx auto;
+  background: #e5e5e5;
+  color: #999;
+  border-radius: 5rpx;
+}
+view.top_good{
+  background: #80bd01!important;
+  color: #fff!important;
+}
+/* 标题 */
+.one .text{
+  float: left;
+  width: 57%;
+  padding-left: 3%;
+}
+.one .text .tit{
+  
+  height: 40rpx;
+  line-height: 50rpx;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 20rpx;
+}
+.one .text .huifu{
+  font-size: 16rpx;
+  height: 40rpx;
+}
+/* 时间 */
+.time{
+  width: 16%;
+  float: left;
+  font-size: 16rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+
